@@ -1,0 +1,118 @@
+
+
+    -> Social Network of friends
+
+    Types of Graph -:
+        -> undirected graph (Roads)
+        -> Directed Graph (DiGraph)  Gift exchange
+        -> Weighted Graph 
+
+    Special Graph -:
+        Tree -> No Cycle and connected
+        Rooted -> designated root 
+        In-tree(->R<-)     Out-tree(<-R->)
+        Directed Acyclic Graph (it shows dependency) -> Shortest path, topological ordering
+        Bipartite Graph -: Two color, thre is no odd length cycle, Mamimum  matching we can perform
+                            Network FLow
+        Complete Graph, worst case 
+
+    Representation of Graph -:
+        Adjaceny Matrix -: 2D Matrix  (V**2) space, not good for Sparse graph
+        Adjaceny List -: A-> [(B,1),(C,5)], O(E) finding a node connection
+        Edge List -: Less Space efficent for dense graph
+
+    Common Graph Theory Graph -: 
+        
+        Shortest Path-: BFS, Dijkstra, Bellman Ford, Floyd-warshall,A* and may more.
+        Connectivity-: DFS or BFS
+
+        Negative Cycle -: Bellman Ford and Floyd Warshall (unwanted benefit-: Currency exchange)
+
+        Strongly connected Components -: Tarjan and KosaRaju
+
+        Traveling Salesman Problem ,(NP -Hard Problem) Computationally challenging Problem
+            Algo-: Held-Karp, branch and bound and many Approx Algorithms (Ant Colony optimation)
+
+        Bridges -: Weakpoints and bottlenecks
+        Articulation point
+
+        Minimum Spanning Tree(MST) -: Desgning a least cost network and circuit design
+            Algo-: Kruskal, Prims and Boruvka.
+
+        Netwowk FLow -: MAx flow -: How much flow I can push through the network
+            -:Maxi amount of car on road
+            -:Max Water in Pipe
+            Algo -: Ford-Fulkerson, Edmonds-Karp and Dinic's Algo. 
+
+        
+
+
+        TREE -: 
+
+            Edge list -: No structure
+            Adjaceny List 
+
+            Can create Adj Matrix but should not prefer it
+
+            Rooted tree -: In and Out
+
+            binary tree -: at most two child nodes
+
+            Storing Rooted Tree .=> ind bases is 0 
+                left node of i => 2*i +1
+                right node of i => 2*i +2
+
+                Reciprocally the parent of node i is =: Floor((i-1)/2)
+
+            A tree can have either a single Center or duo Center.......
+
+
+
+     GENERTATING THE TREE ENCODING =>
+
+            AHU (Aho, HopCorft, Ullman) Algorithm is a clever seria;ization technique 
+            for representating a tree as a unique string.
+
+            AHU captures a Complete history and tree's degree spectrum
+
+            UseCase -: two isomorphiic trees have same AHU string value.
+
+        
+
+    Topological Sort  =>
+
+            -> School Class Prerequisites
+            -> Program dependency
+            -> Assembly instruction
+            ,etc.
+
+            Any Graph Containing Cycle cannot have valid ordering.
+            The only type of graph which have valid topological Sort are Directed Acyclic.
+
+            -> How TO verofy my graph does not have a directed cycle?
+                    Tarjan's Strongly connected Components.
+
+
+
+    SSAP (Single Source shortest Path) on DAG-:
+
+        O(V+E) // positive or negative edgeweight doesnot afftect him.
+
+        Longest Path (SS L P);  
+        -1 * node.edges
+
+    Dijkstra Algorithms =:
+        -> non-negative edge weight
+        -> it acts in a greedy manner always selct next shortest path
+        
+
+        ->lazy Dijkstra
+        ->finding Sp + Stopping early optimization
+        ->Using indexed Priority queue
+        ->Eager Dijkstra
+        ->Heap optimation
+
+        `
+
+
+

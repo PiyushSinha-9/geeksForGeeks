@@ -1,0 +1,29 @@
+
+
+    LIST  =>
+
+        list<int> queue;
+        queue.push_back();
+        queue.push_front();
+        queue.front();
+        queue.back();
+        queue.pop_front();
+        queue.pop_back();
+        queue.empty();
+        queue.clear()           #works properly
+
+
+    Queue  =>
+
+        queue<int> q;
+        q.push() #back push
+        q.front()  #show front value
+        q.pop()     #remove front value
+        q.empty()
+
+        q.clear() is NOT present
+            instead ->
+            queue<int> empty;
+            swap(empty,q);
+        
+    
